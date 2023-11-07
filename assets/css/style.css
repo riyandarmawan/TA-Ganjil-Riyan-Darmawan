@@ -191,7 +191,7 @@ body {
 
 /* about section start */
 .about {
-    padding: 7rem 3% 1rem;
+    padding: 10rem 3% 1rem;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -424,7 +424,7 @@ body {
     /* header start */
     .header .header-left .hamburger-menu {
         display: block;
-        margin-right: 1rem;
+        margin-right: .5rem;
     }
 
     .header .navbar {
@@ -505,7 +505,7 @@ body {
     /* about start */
     .about {
         flex-direction: column;
-        padding: 2rem 5% 1rem;
+        padding: 4rem 5% 1rem;
     }
 
     .about img {
