@@ -408,6 +408,66 @@ body {
 }
 /* how section end */
 
+/* submit section start */
+.submit {
+    padding: 6rem 3% 1rem;
+}
+
+.submit .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.submit .content h2 {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.submit .content h2 span {
+    color: var(--primary);
+}
+
+.submit .content form {
+    box-shadow: 0.1rem 0.1rem 1.5rem rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+    width: 50rem;
+}
+
+.submit .content form > * {
+    display: block;
+}
+
+.submit .content form label {
+    margin: 1rem 0 .5rem;
+}
+
+.submit .content form label:nth-child(1) {
+    margin: 0 0 .5rem;
+}
+
+.submit .content form input, .submit .content form textarea {
+    width: 100%;
+    padding: 1rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+}
+
+.submit .content form button {
+    margin: 1rem 0 0;
+    padding: .3rem 1rem;
+    float: right;
+    display: flex;
+    align-items: center;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.3rem;
+    border-radius: .3rem;
+}
+/* submit section end */
+
 /* contact section start */
 .contact {
     padding: 6rem 7% 1rem;
@@ -510,7 +570,7 @@ footer .navigation a:hover {
 
 footer .credit {
     font-size: 0.8rem;
-    font-weight: 700;
+    color: white;
 }
 /* footer end */
 
@@ -643,6 +703,12 @@ footer .credit {
         width: 60%;
     }
     /* about end */
+
+    /* submit section start */
+    .submit .content form {
+        width: 85%;
+    }
+    /* submit section end */
 
     /* contact sectiom start */
     .contact .content .main {
