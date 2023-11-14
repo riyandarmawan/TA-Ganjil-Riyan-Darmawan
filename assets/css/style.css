@@ -246,7 +246,7 @@ body {
     flex-direction: row;
     justify-content: center;
     width: 70%;
-    flex-wrap: wrap
+    flex-wrap: wrap;
 }
 
 .statistics .content > div {
@@ -258,7 +258,7 @@ body {
     height: 150px;
     padding: 0.5rem;
     border-bottom: none;
-    margin: 2rem 2rem .5rem;
+    margin: 2rem 2rem 0.5rem;
 }
 
 .statistics .content div:nth-child(1) {
@@ -312,7 +312,7 @@ body {
 }
 
 .how .content > h2 {
-    margin: 0 0 .5rem;
+    margin: 0 0 0.5rem;
 }
 
 .how .content > h2 span {
@@ -320,87 +320,91 @@ body {
 }
 
 .how .content p {
-	margin: 0;
-	line-height: 1.6;
+    margin: 0;
+    line-height: 1.6;
 }
 
 .how .content ol {
-	list-style: none;
-	counter-reset: list;
-	padding: 0 1rem;
+    list-style: none;
+    counter-reset: list;
+    padding: 0 1rem;
     --length: 5;
 }
 
 .how .content li {
-	--stop: calc(100% / var(--length) * var(--i));
-	--l: 62%;
-	--l2: 88%;
-	--h: calc((var(--i) - 1) * (180 / var(--length)));
-	--c1: hsl(var(--h), 71%, var(--l));
-	--c2: hsl(var(--h), 71%, var(--l2));
+    --stop: calc(100% / var(--length) * var(--i));
+    --l: 62%;
+    --l2: 88%;
+    --h: calc((var(--i) - 1) * (180 / var(--length)));
+    --c1: hsl(var(--h), 71%, var(--l));
+    --c2: hsl(var(--h), 71%, var(--l2));
 
-	position: relative;
-	counter-increment: list;
-	max-width: 45rem;
-	margin: 2rem auto;
-	padding: 2rem 1rem 1rem;
-	box-shadow: 0.1rem 0.1rem 1.5rem rgba(0, 0, 0, 0.3);
-	border-radius: 0.25rem;
-	overflow: hidden;
-	background-color: white;
+    position: relative;
+    counter-increment: list;
+    max-width: 45rem;
+    margin: 2rem auto;
+    padding: 2rem 1rem 1rem;
+    box-shadow: 0.1rem 0.1rem 1.5rem rgba(0, 0, 0, 0.3);
+    border-radius: 0.25rem;
+    overflow: hidden;
+    background-color: white;
 }
 
 .how .content li::before {
-	content: '';
-	display: block;
-	width: 100%;
-	height: 1rem;
-	position: absolute;
-	top: 0;
-	left: 0;
-	background: linear-gradient(to right, var(--c1) var(--stop), var(--c2) var(--stop));
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(
+        to right,
+        var(--c1) var(--stop),
+        var(--c2) var(--stop)
+    );
 }
 
 .how .content li:nth-child(1) {
-    --i: 1
+    --i: 1;
 }
 
 .how .content li:nth-child(2) {
-    --i: 2
+    --i: 2;
 }
 .how .content li:nth-child(3) {
-    --i: 3
+    --i: 3;
 }
 
 .how .content li:nth-child(4) {
-    --i: 4
+    --i: 4;
 }
 
 .how .content li:nth-child(5) {
-    --i: 5
+    --i: 5;
 }
 
 .how .content h3 {
-	display: flex;
-	align-items: center;
-	margin: 0 0 rem;
-	color: rgb(70 70 70);
+    display: flex;
+    align-items: center;
+    margin: 0 0 rem;
+    color: rgb(70 70 70);
 }
 
 .how .content h3::before {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex: 0 0 auto;
-	margin: 0 1rem .5rem 0;
-	width: 3rem;
-	height: 3rem;
-	content: counter(list);
-	padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto;
+    margin: 0 1rem 0.5rem 0;
+    width: 3rem;
+    height: 3rem;
+    content: counter(list);
+    padding: 1rem;
     font-size: 2rem;
-	border-radius: 50%;
-	background-color: var(--c1);
-	color: white;
+    border-radius: 50%;
+    background-color: var(--c1);
+    color: white;
 }
 /* how section end */
 
@@ -426,7 +430,7 @@ body {
 
 .contact .content .main {
     display: flex;
-	box-shadow: 0.1rem 0.1rem 1.5rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0.1rem 0.1rem 1.5rem rgba(0, 0, 0, 0.5);
 }
 
 .contact .content .main iframe {
@@ -464,7 +468,7 @@ body {
 }
 
 .contact .content .main form button {
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
     cursor: pointer;
     background-color: var(--primary);
     border: none;
@@ -472,6 +476,43 @@ body {
     align-self: center;
 }
 /* contact section end */
+
+/* footer start */
+footer {
+    background-color: gray;
+    text-align: center;
+    padding: 1rem 0 3rem;
+    margin-top: 3rem;
+}
+
+footer .media-social {
+    padding: 1rem 0;
+}
+
+footer .media-social a {
+    color: white;
+    margin: 1rem;
+}
+
+footer .navigation {
+    margin-bottom: 1.4rem;
+}
+
+footer .navigation a {
+    color: white;
+    padding: 0.7rem 1rem;
+}
+
+footer .media-social a:hover,
+footer .navigation a:hover {
+  color: var(--primary);
+}
+
+footer .credit {
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+/* footer end */
 
 /* media queries */
 @media (max-width: 1920) {
@@ -514,7 +555,7 @@ body {
     /* header start */
     .header .header-left .hamburger-menu {
         display: block;
-        margin-right: .5rem;
+        margin-right: 0.5rem;
     }
 
     .header .navbar {
@@ -608,7 +649,8 @@ body {
         flex-wrap: wrap;
     }
 
-    .contact .content .main iframe, .contact .content .main form {
+    .contact .content .main iframe,
+    .contact .content .main form {
         flex: 100%;
     }
 
