@@ -10,8 +10,6 @@
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
-    border: none;
-    outline: none;
 }
 
 html {
@@ -144,6 +142,7 @@ body {
     padding: 6rem 3% 1rem;
     display: flex;
     align-items: center;
+    width: 100vw;
 }
 
 .home .content {
@@ -151,6 +150,7 @@ body {
     align-items: center;
     justify-content: space-between;
     width: max-content;
+    padding-left: 1rem;
 }
 
 .home .content > div {
@@ -329,6 +329,7 @@ body {
 	list-style: none;
 	counter-reset: list;
 	padding: 0 1rem;
+    --length: 5;
 }
 
 .how .content li {
@@ -361,6 +362,25 @@ body {
 	background: linear-gradient(to right, var(--c1) var(--stop), var(--c2) var(--stop));
 }
 
+.how .content li:nth-child(1) {
+    --i: 1
+}
+
+.how .content li:nth-child(2) {
+    --i: 2
+}
+.how .content li:nth-child(3) {
+    --i: 3
+}
+
+.how .content li:nth-child(4) {
+    --i: 4
+}
+
+.how .content li:nth-child(5) {
+    --i: 5
+}
+
 .how .content h3 {
 	display: flex;
 	align-items: center;
@@ -373,16 +393,86 @@ body {
 	justify-content: center;
 	align-items: center;
 	flex: 0 0 auto;
-	margin-right: 1rem;
+	margin: 0 1rem .5rem 0;
 	width: 3rem;
 	height: 3rem;
 	content: counter(list);
 	padding: 1rem;
+    font-size: 2rem;
 	border-radius: 50%;
 	background-color: var(--c1);
 	color: white;
 }
 /* how section end */
+
+/* contact section start */
+.contact {
+    padding: 6rem 7% 1rem;
+}
+
+.contact .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact .content h2 {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.contact .content h2 span {
+    color: var(--primary);
+}
+
+.contact .content .main {
+    display: flex;
+	box-shadow: 0.1rem 0.1rem 1.5rem rgba(0, 0, 0, 0.5);
+}
+
+.contact .content .main iframe {
+    flex: 50%;
+}
+
+.contact .content .main form {
+    flex: 50%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact .content .main form div {
+    border: 1px solid black;
+    margin: 0 0 1rem;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+.contact .content .main form div span {
+    padding: 1rem;
+}
+
+.contact .content .main form div input {
+    width: 100%;
+    padding: 1rem 0;
+    border: 0;
+}
+
+.contact .content .main form div input:focus {
+    outline: none;
+}
+
+.contact .content .main form button {
+    padding: .5rem 1rem;
+    cursor: pointer;
+    background-color: var(--primary);
+    border: none;
+    color: white;
+    align-self: center;
+}
+/* contact section end */
 
 /* media queries */
 @media (max-width: 1920) {
@@ -513,6 +603,20 @@ body {
         width: 60%;
     }
     /* about end */
+
+    /* contact sectiom start */
+    .contact .content .main {
+        flex-wrap: wrap;
+    }
+
+    .contact .content .main iframe, .contact .content .main form {
+        flex: 100%;
+    }
+
+    .contact .content .main iframe {
+        width: 50%;
+    }
+    /* contact sectiom end */
 }
 
 /* Mobile Phone */
@@ -525,6 +629,6 @@ body {
         width: 60%;
     }
 
-    /* how section start */
-    /* how section end */
+    /* contact section start */
+    /* contact section end */
 }
