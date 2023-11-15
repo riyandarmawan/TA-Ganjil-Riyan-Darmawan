@@ -574,6 +574,87 @@ footer .credit {
 }
 /* footer end */
 
+/* login start */
+.full {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.full .container {
+    width: 350px;
+    height: 350px;
+    border-radius: 16px;
+    box-shadow: 0.1rem 0.1rem 1.5rem rgba(0, 0, 0, 0.6);
+    padding: 1.5rem 1.2rem;
+}
+
+.full .container .top {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 1.5rem
+}
+
+.full .container .top a {
+    cursor: pointer;
+    color: black;
+    position: absolute;
+    left: 0;
+}
+
+.full .container form > * {
+    display: block;
+}
+
+.full .container form label {
+    margin: .5rem 0 .3rem;
+    font-weight: 500;
+}
+
+.full .container form input {
+    width: 100%;
+    padding: .5rem;
+}
+
+.full .container form a {
+    margin: .6rem 0;
+    float: right;
+}
+
+.full .container form button {
+    width: 100%;
+    padding: .3rem 2rem;
+    background-color: var(--primary);
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 1.5rem;
+    margin: auto;
+    cursor: pointer;
+}
+
+.full .container > p {
+    font-size: .9rem;
+    margin: 1.3rem 0;
+    text-align: center;
+    font-weight: 400;
+}
+
+.full .container > p a {
+    font-weight: 500;
+}
+
+.full .container > a {
+    font-size: .8rem;    
+    text-align: center;
+    color: gray;
+    display: block;
+}
+/* login end */
+
 /* media queries */
 @media (max-width: 1920) {
     html {
@@ -738,4 +819,11 @@ footer .credit {
 
     /* contact section start */
     /* contact section end */
+
+    /* login start */
+    .full .container {
+        width: 250px;
+        height: 280px;
+    }
+    /* login end */
 }
